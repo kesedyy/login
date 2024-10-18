@@ -1,0 +1,61 @@
+:root {
+    --dark-blue: #361999;
+    --light-blue: #78fff1;
+
+
+
+}
+
+body {
+
+    height: 100vh;
+    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+form {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    background: var(--datk-blue);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.login {
+    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 200px;
+    height: 40px;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+.password {
+    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+button {
+    color: white;
+    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 20px;
+    border: 0px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+
+
+}
+::placeholder{
+    color: white;
+}
