@@ -1,6 +1,6 @@
 :root {
-    --dark-blue: #201111;
-    --light-blue: #e40f0f;
+    --dark-blue: #290909;
+    --light-blue: #c00a0a;
     --white: #fcfcfc;
 
 
@@ -48,10 +48,12 @@ form {
 }
 
 a {
+    text-decoration: none;
     color: white;
 }
 
 button {
+    text-decoration: none;
     color: white;
     background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
@@ -89,12 +91,12 @@ button:hover::after {
     top: 50;
     transform:
         translateY(-50%);
-    animation: moveBall1 8s infinite linear;
+    animation: moveBall1 9s infinite linear;
 }
 
 @keyframes moveBall1 {
     0% {
-        left: -1000px;
+        left: -500px;
     }
 
     100% {
@@ -103,7 +105,7 @@ button:hover::after {
 }
 
 .ball2 {
-    left: 10%;
+    left: 4%;
     width: 350px;
     height: 350px;
     background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
@@ -113,16 +115,16 @@ button:hover::after {
     top: 50;
     transform:
         translateY(-50%);
-    animation: moveBall2 7s infinite linear
+    animation: moveBall2 18s infinite linear
 }
 
 @keyframes moveBall2 {
     0% {
-        top: -1000px;
+        top: -500px;
     }
 
     100% {
-        top: 70vw;
+        top: 100vw;
     }
 }
 
@@ -137,13 +139,14 @@ opacity: 0;
     transform: translateX(50px);
 }
 .line {
-    border-radius: 20%;
+
+    border-radius: 90%;
     width: 80%;
     height: 3px;
     background: white;
-    margin-bottom: 0px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .foto {
     width: 75px;
