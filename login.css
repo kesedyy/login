@@ -1,154 +1,125 @@
-:root {
-    --dark-blue: #290909;
-    --light-blue: #c00a0a;
-    --white: #fcfcfc;
-
-
-
-
+*{
+    margin: 0;
 }
-
-body {
-    overflow: hidden;
-    height: 100vh;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    align-items: center;
+body{
+    height: 99vh;
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    background: linear-gradient(to top,  rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+}
+#gluwna1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gluwna2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+    width: 185px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-form {
-    opacity: 0.5;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
-    text-align: center;
-    padding: 25px;
+.all{
+    height: 200px;
+    border: 2px solid;
     border-radius: 10px;
 }
-
-.login {
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-    width: 200px;
-    height: 40px;
-    border: 0px solid black;
-    border-radius: 10px;
+.resultat{
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
 }
-
-.password {
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-    margin-top: 30px;
-    margin: 12px;
-    width: 200px;
-    height: 40px;
-    border: 0px solid black;
-    border-radius: 10px;
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
 }
-
-a {
-    text-decoration: none;
-    color: white;
+.res{
+    margin-top: 10px;
+    margin-left: 5px;
 }
-
-button {
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-    width: 100px;
-    height: 20px;
-    border: 0px solid black;
-    border-radius: 20px;
-    margin-top: 30px;
-    position: relative;
-    overflow: hidden;
+.tt{
+    display: flex;
+    justify-content: center;
 }
-button::after {
-    background:white;
-    content: '';
-    height: 80px;
-    left: -20px;
-    position: absolute;
-    top: 0px;
-    transform: skewX(15deg);
-    width: 20px;
-}
-
-button:hover::after {
-    transform: translateX(135px) skewX(15deg);
-    transition: transform 1s linear;
-}
-
 .ball1 {
+    left: 85%;
     width: 150px;
     height: 150px;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 50;
     transform:
-        translateY(-50%);
-    animation: moveBall1 9s infinite linear;
+        translateY(-120%);
+   
 }
-
-@keyframes moveBall1 {
-    0% {
-        left: -500px;
-    }
-
-    100% {
-        left: 100vw;
-    }
-}
-
 .ball2 {
     left: 4%;
     width: 350px;
     height: 350px;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 50;
     transform:
         translateY(-50%);
-    animation: moveBall2 18s infinite linear
+   
 }
-
-@keyframes moveBall2 {
-    0% {
-        top: -500px;
-    }
-
-    100% {
-        top: 100vw;
-    }
-}
-
-input::placeholder {
-    color: white;
+.form1{
+    left: 70%;
+    width: 350px;
+    height: 350px;
+    border-radius: 200%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50;
+    transform:
+        translateY(30%);
     
 }
-
-input:focus::placeholder {
-    transition: transform 0.3s linear,  opacity 0.3s linear;
-opacity: 0;
-    transform: translateX(50px);
+.form2{
+    left: 66%;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50;
+    transform:
+        translateY(-200%);
 }
-.line {
 
-    border-radius: 90%;
-    width: 80%;
-    height: 3px;
-    background: white;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+
+
+.form4{
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20;
+    transform:
+        translateY(120%);
 }
-.foto {
-    width: 75px;
-    height: 75px;
+.form5 {
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50;
+    transform:
+        translateY(70%);
 }
